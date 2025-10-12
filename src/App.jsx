@@ -33,55 +33,55 @@ function App() {
         <hr />
 
        {/* LATIHAN 2 - GRID GALERI TANPA ARRAY */}
-<h2 className="font-semibold">LATIHAN 2</h2>
-<div className="p-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
-  <img
-    src="https://www.placehold.co/200x200"
-    alt="Gambar Galeri 1"
-    className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
-  />
-  <img
-    src="https://www.placehold.co/200x200"
-    alt="Gambar Galeri 2"
-    className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
-  />
-  <img
-    src="https://www.placehold.co/200x200"
-    alt="Gambar Galeri 3"
-    className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
-  />
-  <img
-    src="https://www.placehold.co/200x200"
-    alt="Gambar Galeri 4"
-    className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
-  />
-  <img
-    src="https://www.placehold.co/200x200"
-    alt="Gambar Galeri 5"
-    className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
-  />
-  <img
-    src="https://www.placehold.co/200x200"
-    alt="Gambar Galeri 6"
-    className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
-  />
-</div>
-
-
+      <h2 className="font-semibold">LATIHAN 2</h2>
+      <div className="p-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+        <img
+          src="https://www.placehold.co/200x200"
+          alt="Gambar Galeri 1"
+          className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
+        />
+        <img
+          src="https://www.placehold.co/200x200"
+          alt="Gambar Galeri 2"
+          className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
+        />
+        <img
+          src="https://www.placehold.co/200x200"
+          alt="Gambar Galeri 3"
+          className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
+        />
+        <img
+          src="https://www.placehold.co/200x200"
+          alt="Gambar Galeri 4"
+          className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
+        />
+        <img
+          src="https://www.placehold.co/200x200"
+          alt="Gambar Galeri 5"
+          className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
+        />
+        <img
+          src="https://www.placehold.co/200x200"
+          alt="Gambar Galeri 6"
+          className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
+        />
+      </div>
 
         <hr />
 
-        {/* LATIHAN 3 - PRICING TABLE */}
-        <h2 className="font-semibold">LATIHAN 3</h2>
-        <div className="p-4 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+       {/* LATIHAN 3 - PRICING TABLE */}
+
+        <h2 className="font-semibold mb-4">LATIHAN 3</h2>
+
+        <div className="p-4 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 text-center">
           {/* Basic */}
           <div className="bg-gray-200 p-6 rounded shadow-md hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300">
             <h3 className="font-semibold text-lg">Basic</h3>
-            <p>Rp 50.000</p>
+             <p>Rp 50.000</p>
           </div>
 
-          {/* Pro */}
-          <div className="bg-blue-200 p-6 rounded shadow-md hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300">
+          {/* Pro (lebih besar di mobile & desktop) */}
+          <div className="bg-blue-200 p-8 rounded shadow-lg border border-gray-300 scale-105 md:scale-110 hover:scale-115 transition-transform duration-300 z-10">
             <h3 className="font-semibold text-lg">Pro</h3>
             <p>Rp 100.000</p>
           </div>
@@ -96,32 +96,29 @@ function App() {
         <hr />
 
         {/* LATIHAN 4 - DASHBOARD LAYOUT */}
-<h2 className="font-semibold mb-4">LATIHAN 4</h2>
+        <h2 className="font-semibold mb-4">LATIHAN 4</h2>
 
-<div className="grid grid-cols-1 md:grid-cols-12 gap-2 min-h-[80vh] font-medium text-left">
-  {/* Header */}
-  <header className="bg-gray-300 p-6 md:col-span-12 h-[200px] flex items-start justify-start">
-    Header
-  </header>
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-2 min-h-[80vh] font-medium text-left">
+          {/* Header */}
+          <header className="bg-gray-300 p-6 md:col-span-12 h-[300px] flex items-start justify-start">
+            Header
+          </header>
 
-  {/* Sidebar */}
-  <aside className="bg-gray-200 p-6 md:col-span-3 h-[200px] flex items-start justify-start">
-    Sidebar
-  </aside>
+          {/* Sidebar */}
+          <aside className="bg-gray-200 p-6 md:col-span-3 h-[300px] flex items-start justify-start">
+            Sidebar
+          </aside>
 
-  {/* Content */}
-  <main className="bg-white p-6 border md:col-span-9 h-[200px] flex items-start justify-start">
-    Content
-  </main>
+          {/* Content */}
+          <main className="bg-white p-6 border md:col-span-9 h-[300px] flex items-start justify-start">
+            Content
+          </main>
 
-  {/* Footer */}
-  <footer className="bg-gray-300 p-6 md:col-span-12 h-[200px] flex items-start justify-start">
-    Footer
-  </footer>
-</div>
-
-
-
+          {/* Footer */}
+          <footer className="bg-gray-300 p-6 md:col-span-12 h-[300px] flex items-start justify-start">
+            Footer
+          </footer>
+        </div>
 
         <hr />
 
@@ -129,14 +126,14 @@ function App() {
         <h2 className="font-semibold">LATIHAN 5</h2>
         <div className="p-4 border rounded flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 hover:shadow-lg hover:scale-105 transition-transform duration-300">
           <img
-            src="https://www.placehold.co/100x100"
+            src="https://www.placehold.co/80x80"
             alt="Gambar Produk"
-            className="h-24 w-24 rounded object-cover"
+            className="h-20 w-20 rounded object-cover"
           />
           <div className="text-center md:text-left">
             <h3 className="font-bold text-lg">Nama Produk</h3>
             <p className="text-sm text-gray-600">
-              Deskripsi produk singkat yang menjelaskan fitur atau manfaat utama dari produk ini.
+              Deskripsi produk singkat...
             </p>
           </div>
         </div>
