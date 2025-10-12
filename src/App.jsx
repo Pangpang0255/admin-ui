@@ -5,13 +5,13 @@ function App() {
     <>
       <div className="p-6 space-y-8">
         {/* LATIHAN 1 - NAVBAR */}
-        LATIHAN 1
-        <nav className="p-4 bg-gray-100 flex justify-between items-center">
+        <h2 className="font-semibold">LATIHAN 1</h2>
+        <nav className="p-4 bg-gray-100 flex flex-col md:flex-row md:justify-between md:items-center">
           {/* Kiri - Logo */}
-          <div className="font-bold text-lg mb-2">MyLogo</div>
+          <div className="font-bold text-lg mb-2 md:mb-0">MyLogo</div>
 
           {/* Kanan - Menu */}
-          <ul className="flex space-x-6">
+          <ul className="flex flex-col md:flex-row md:space-x-6 space-y-1 md:space-y-0 text-left">
             <li>
               <a href="#" className="hover:underline">
                 Home
@@ -29,88 +29,115 @@ function App() {
             </li>
           </ul>
         </nav>
+
         <hr />
-        {/* LATIHAN 2 - GRID GALERI */}
-        LATIHAN 2
-        <div className="p-4 grid grid-cols-4 gap-6">
-          <img
-            src="https://www.placehold.co/200x200"
-            alt="Gambar Galeri"
-            className="h-48"
-          />
-          <img
-            src="https://www.placehold.co/200x200"
-            alt="Gambar Galeri"
-            className="h-48"
-          />
-          <img
-            src="https://www.placehold.co/200x200"
-            alt="Gambar Galeri"
-            className="h-48"
-          />
-          <img
-            src="https://www.placehold.co/200x200"
-            alt="Gambar Galeri"
-            className="h-48"
-          />
-          <img
-            src="https://www.placehold.co/200x200"
-            alt="Gambar Galeri"
-            className="h-48"
-          />
-          <img
-            src="https://www.placehold.co/200x200"
-            alt="Gambar Galeri"
-            className="h-48"
-          />
-        </div>
+
+       {/* LATIHAN 2 - GRID GALERI TANPA ARRAY */}
+<h2 className="font-semibold">LATIHAN 2</h2>
+<div className="p-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+  <img
+    src="https://www.placehold.co/200x200"
+    alt="Gambar Galeri 1"
+    className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
+  />
+  <img
+    src="https://www.placehold.co/200x200"
+    alt="Gambar Galeri 2"
+    className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
+  />
+  <img
+    src="https://www.placehold.co/200x200"
+    alt="Gambar Galeri 3"
+    className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
+  />
+  <img
+    src="https://www.placehold.co/200x200"
+    alt="Gambar Galeri 4"
+    className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
+  />
+  <img
+    src="https://www.placehold.co/200x200"
+    alt="Gambar Galeri 5"
+    className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
+  />
+  <img
+    src="https://www.placehold.co/200x200"
+    alt="Gambar Galeri 6"
+    className="h-48 w-48 object-cover rounded hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300"
+  />
+</div>
+
+
+
         <hr />
+
         {/* LATIHAN 3 - PRICING TABLE */}
-        LATIHAN 3
-           <div className="p-4 grid grid-cols-3 gap-4 text-center items-end">
+        <h2 className="font-semibold">LATIHAN 3</h2>
+        <div className="p-4 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
           {/* Basic */}
-          <div className="bg-gray-200 p-6 rounded shadow-md 
-            hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300">
+          <div className="bg-gray-200 p-6 rounded shadow-md hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300">
             <h3 className="font-semibold text-lg">Basic</h3>
             <p>Rp 50.000</p>
           </div>
 
-          {/* Pro (POP-UP) */}
-          <div className="bg-blue-300 p-6 rounded shadow-md 
-            hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300">
+          {/* Pro */}
+          <div className="bg-blue-200 p-6 rounded shadow-md hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300">
             <h3 className="font-semibold text-lg">Pro</h3>
             <p>Rp 100.000</p>
           </div>
 
-           {/* Premium */}
-          <div className="bg-gray-200 p-6 rounded shadow-md 
-            hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300">
+          {/* Premium */}
+          <div className="bg-gray-200 p-6 rounded shadow-md hover:border border-gray-500 hover:shadow-lg hover:scale-105 transition-transform duration-300">
             <h3 className="font-semibold text-lg">Premium</h3>
             <p>Rp 200.000</p>
           </div>
+        </div>
 
-        </div>
         <hr />
+
         {/* LATIHAN 4 - DASHBOARD LAYOUT */}
-        LATIHAN 4
-        <div className="min-h-screen">
-          <header className="bg-gray-300 p-4">Header</header>
-          <aside className="bg-gray-200 p-4">Sidebar</aside>
-          <main className="bg-white p-4 border">Content</main>
-          <footer className="bg-gray-300 p-4">Footer</footer>
-        </div>
+<h2 className="font-semibold mb-4">LATIHAN 4</h2>
+
+<div className="grid grid-cols-1 md:grid-cols-12 gap-2 min-h-[80vh] font-medium text-left">
+  {/* Header */}
+  <header className="bg-gray-300 p-6 md:col-span-12 h-[200px] flex items-start justify-start">
+    Header
+  </header>
+
+  {/* Sidebar */}
+  <aside className="bg-gray-200 p-6 md:col-span-3 h-[200px] flex items-start justify-start">
+    Sidebar
+  </aside>
+
+  {/* Content */}
+  <main className="bg-white p-6 border md:col-span-9 h-[200px] flex items-start justify-start">
+    Content
+  </main>
+
+  {/* Footer */}
+  <footer className="bg-gray-300 p-6 md:col-span-12 h-[200px] flex items-start justify-start">
+    Footer
+  </footer>
+</div>
+
+
+
+
         <hr />
+
         {/* LATIHAN 5 - CARD PRODUCT */}
-        LATIHAN 5
-        <div className="p-4 border">
+        <h2 className="font-semibold">LATIHAN 5</h2>
+        <div className="p-4 border rounded flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-4 hover:shadow-lg hover:scale-105 transition-transform duration-300">
           <img
-            src="https://www.placehold.co/80x80"
+            src="https://www.placehold.co/100x100"
             alt="Gambar Produk"
-            className="h-20 w-20"
+            className="h-24 w-24 rounded object-cover"
           />
-          <div>
-            <h3 className="font-bold">Nama Produk</h3>
-            <p className="text-sm text-gray-600">Deskripsi produk singkat...</p>
+          <div className="text-center md:text-left">
+            <h3 className="font-bold text-lg">Nama Produk</h3>
+            <p className="text-sm text-gray-600">
+              Deskripsi produk singkat yang menjelaskan fitur atau manfaat utama dari produk ini.
+            </p>
           </div>
         </div>
       </div>
