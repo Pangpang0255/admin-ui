@@ -32,7 +32,7 @@ function App() {
 
         <hr />
 
-       {/* LATIHAN 2 - GRID GALERI TANPA ARRAY */}
+       {/* LATIHAN 2 - GRID GALERI */}
       <h2 className="font-semibold">LATIHAN 2</h2>
       <div className="p-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
         <img
@@ -80,7 +80,7 @@ function App() {
              <p>Rp 50.000</p>
           </div>
 
-          {/* Pro (lebih besar di mobile & desktop) */}
+          {/* Pro */}
           <div className="bg-blue-200 p-8 rounded shadow-lg border border-gray-300 scale-105 md:scale-110 hover:scale-115 transition-transform duration-300 z-10">
             <h3 className="font-semibold text-lg">Pro</h3>
             <p>Rp 100.000</p>
