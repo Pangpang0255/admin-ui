@@ -20,7 +20,7 @@ function PostCard() {
 
   return (
     <>
-      <div className="border-2 border-gray-300 rounded-lg bg-white/90 backdrop-blur-sm hover:shadow-lg transition-shadow duration-300 flex flex-col h-full aspect-square p-5 overflow-hidden">
+      <div className="min-h-screen bg-gray-100 p-6">
         <h1 className="text-3xl font-bold text-center mb-6 text-[#b83016]">
           Post Cards
         </h1>
