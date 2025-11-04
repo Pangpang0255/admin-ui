@@ -1,26 +1,37 @@
 import React, { useState } from "react";
 
 function UserCard(props) {
-    const { name, email, street, city } = props;
-    const [clicked, setClicked] = useState(false);
-
-      // Fungsi handler
-  function handleClick() {
-    setClicked(true);
-  }
+  const { title, body } = props;
+  const [clicked, setClicked] = useState(false);
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow hover:shadow-md transition-shadow">
-      <h2 className="text-xl font-semibold text-gray-800 mb-2">{name}</h2>
-      <p className="text-gray-600">
-        <span className="font-medium">Email:</span> {email}
+    <div
+      className={`
+        flex flex-col justify-between items-center text-center
+        p-4 rounded-lg shadow-md transition-all duration-300 transform
+        ${clicked ? "bg-pink-100" : "bg-white"}
+        hover:scale-105 hover:shadow-lg hover:border hover:border-black
+        min-h-[260px] max-w-xs mx-auto
+      `}
+    >
+      {/* Title */}
+      <h2 className="text-sm font-semibold text-gray-800 mb-2 leading-snug">
+        {title}
+      </h2>
+
+      {/* Body */}
+      <p className="text-gray-600 text-xs leading-relaxed mb-3 line-clamp-4 whitespace-pre-line">
+        {body}
       </p>
-      <p className="text-gray-600">
-        <span className="font-medium">Address:</span> {street}, {city}
-      </p>
-      <button 
-      className={`${clicked ? "bg-special-green" : "bg-gray-01"} text-white p-2 rounded-md`}
-      onClick={() => setClicked(true)}
+
+      {/* Tombol klik */}
+      <button
+        className={`text-white py-1.5 px-3 rounded-md w-full transition-colors duration-200 text-sm font-medium
+          ${clicked 
+            ? "bg-[#b83016] hover:bg-[#d94a3c]"
+            : "bg-gray-500 hover:bg-gray-600"
+          }`}
+        onClick={() => setClicked(true)}
       >
         {clicked ? "Tombol sudah diklik" : "Silakan Klik"}
       </button>
@@ -28,4 +39,4 @@ function UserCard(props) {
   );
 }
 
-export default UserCard
+export default UserCard;
